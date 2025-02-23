@@ -7,7 +7,7 @@ const client = new Client()
 
 const account = new Account(client);
 const avatars = new Avatars(client);
-const databeses = new Databases(client);
+const databases = new Databases(client);
 const storage = new Storage(client);
 
-export { client, account, avatars, databeses, storage }
+export { client, account, avatars, databases, storage }
