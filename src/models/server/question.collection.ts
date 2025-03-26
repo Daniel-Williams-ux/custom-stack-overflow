@@ -7,11 +7,11 @@ import { log } from "console"
 export default async function createQuestionCollection() {
     // create collection
     await databases.createCollection(db, questionCollection, questionCollection, [
+        Permission.create("users"),
         Permission.read("any"),
         Permission.read("users"),
-        Permission.create("users"),
         Permission.update("users"),
-        Permission.delete("users")
+        Permission.delete("users"),
     ])
     console.log("Question collection is created")
 
